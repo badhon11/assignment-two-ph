@@ -14,6 +14,7 @@ body {
     color: #131313;
     font-weight: 700;
     font-size: 45px;
+    margin: 24px 0;
     /* line-height: 53px; */
 }
 
@@ -119,6 +120,18 @@ main {
     gap: 54px;
 }
 
+.feature-head {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.rectangle {
+    height: 160px;
+    width: 8px;
+    background-color: #FF900E;
+}
+
 .feature-details {
     width: 60%;
     /* background-color: #FF900E; */
@@ -130,6 +143,7 @@ main {
     padding: 30px;
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
 .feature-name {
@@ -164,10 +178,92 @@ main {
     font-size: 25px;
 }
 
+/* --- facts styles ---- */
+
+.facts {
+    margin: 130px 0;
+}
+
+.fact-grid-set {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-around;
+}
+
+.fact-grid {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    /* padding: 45px 36px 60px; */
+    width: 200px;
+    height: 200px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fact-grid:hover {
+    transform: skew(-20deg);
+}
+
+.fact-grid h5 {
+    font-weight: 600;
+    font-size: 45px;
+    margin: 10px 0 5px 0;
+}
+
+/* --- sponsors styles --- */
+.sponsors {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.sponsors p {
+    width: 50%;
+}
+
+.sponsor-set {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.sponsor-img img {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+/* --- footer styles --- */
+
+footer {
+    background: rgba(255, 144, 14, 0.1);
+    text-align: center;
+    margin: 50px 240px 200px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #424242;
+    font-weight: 400;
+    font-size: 20px;
+}
+
 /* ------------------------------------
     Styles for mobile (small) devices 
 ---------------------------------------- */
 @media screen and (max-width: 576px) {
+
+    .section-name {
+        font-size: 30px;
+    }
+
+    .head-head {
+        font-size: 35px;
+    }
 
     /* --- header --- */
     header {
@@ -203,7 +299,7 @@ main {
     .head-head {
         margin: 30px 0;
         font-weight: 700;
-        font-size: 36px;
+        font-size: 33px;
     }
 
     header img {
@@ -249,5 +345,26 @@ main {
 
     .experience {
         font-size: calc(25px/2);
+    }
+
+    /* --- facts --- */
+    .fact-grid-set {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    /* --- sponsors --- */
+    .sponsor-set {
+        flex-direction: column;
+    }
+
+    /* --- footer --- */
+    footer {
+        width: 100%;
+        margin: 10px;
+        font-size: 12px;
+        padding: 0 10px;
+        height: 50px;
     }
 }
